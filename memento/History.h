@@ -11,7 +11,8 @@
 class History {
 public:
     void push(EditorState* state);
-    EditorState* pop();
+
+    [[maybe_unused]] EditorState* pop();
 private:
     vector<EditorState*> states;
 };

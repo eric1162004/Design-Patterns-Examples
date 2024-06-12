@@ -8,7 +8,7 @@ void History::push(EditorState* state) {
     states.push_back(state);
 }
 
-EditorState* History::pop() {
+[[maybe_unused]] EditorState* History::pop() {
     EditorState* lastState = states.back();
     states.pop_back();
     return lastState;
