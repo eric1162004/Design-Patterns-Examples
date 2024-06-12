@@ -1,0 +1,14 @@
+//
+// Created by eric1 on 6/12/2024.
+//
+
+#ifndef DESIGN_PATTERNS_EXAMPLES_TOOLTYPE_H
+#define DESIGN_PATTERNS_EXAMPLES_TOOLTYPE_H
+
+enum class ToolType {
+    SELECTION = 0,
+    BRUSH = 1,
+    ERASER = 2
+};
+
+#endif //DESIGN_PATTERNS_EXAMPLES_TOOLTYPE_H
