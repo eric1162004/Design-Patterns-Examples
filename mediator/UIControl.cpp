@@ -4,4 +4,4 @@
 
 #include "UIControl.h"
 
-UIControl::UIControl(DialogBox *dialogBox) : dialogBox(dialogBox) {}
+UIControl::UIControl(DialogBox *dialogBox) : owner(dialogBox) {}

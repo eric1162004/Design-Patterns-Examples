@@ -4,8 +4,6 @@
 
 #include "TextBox.h"
 
-TextBox::TextBox(DialogBox *dialogBox, const std::string &content) : UIControl(dialogBox), content(content) {}
-
 const std::string &TextBox::getContent() const
 {
     return content;
@@ -14,5 +12,5 @@ const std::string &TextBox::getContent() const
 void TextBox::setContent(const std::string &content)
 {
     TextBox::content = content;
-    owner->changed(this);
+    notifyObservers();
 }

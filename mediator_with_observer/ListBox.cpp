@@ -4,8 +4,6 @@
 
 #include "ListBox.h"
 
-ListBox::ListBox(DialogBox *dialogBox) : UIControl(dialogBox) {}
-
 const std::string &ListBox::getSelection() const
 {
     return selection;
@@ -14,5 +12,5 @@ const std::string &ListBox::getSelection() const
 void ListBox::setSelection(const std::string &selection)
 {
     ListBox::selection = selection;
-    owner->changed(this);
+    notifyObservers();
 }

@@ -15,7 +15,7 @@ public:
     explicit UIControl(DialogBox *dialogBox);
 
 protected:
-    DialogBox *dialogBox;
+    DialogBox *owner;
 };
 
 #endif // DESIGN_PATTERNS_EXAMPLES_UICONTROL_H

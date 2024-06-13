@@ -4,8 +4,6 @@
 
 #include "Button.h"
 
-Button::Button(DialogBox *dialogBox, bool isEnabled) : UIControl(dialogBox), isEnabled(isEnabled) {}
-
 bool Button::getIsEnabled() const {
     return isEnabled;
 }
@@ -13,6 +11,6 @@ bool Button::getIsEnabled() const {
 void Button::setIsEnabled(bool isEnabled)
 {
     Button::isEnabled = isEnabled;
-    owner->changed(this);
+    notifyObservers();
 }
 
